@@ -92,12 +92,12 @@ static NSString *TAG = @"OAuth2Client";
     DCTOAuth2Account *account;
     // Required
     NSURL *authorize_url = [cfg objectForKey:@"authorize_url"];
-    NSString *scopeStr = [cfg valueForKey:@"scopes"];
+    NSString *scopes = [cfg valueForKey:@"scopes"];
     // NSArray *scopes = [scopeStr componentsSeparatedByString:@" "];
 
-    NSString *sep = @" ";
-    NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:sep];
-    NSArray *scopes = [scopeStr componentsSeparatedByCharactersInSet:set];
+    // NSString *sep = @" ";
+    // NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:sep];
+    // NSArray *scopes = [scopeStr componentsSeparatedByCharactersInSet:set];
 
     // Optional
     
