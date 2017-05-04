@@ -93,7 +93,7 @@ static NSString *TAG = @"OAuth2Client";
     // Required
     NSURL *authorize_url = [cfg objectForKey:@"authorize_url"];
     NSString *scopeStr = [cfg valueForKey:@"scopes"];
-    NSArray *scopes = [scopeStr componentsSeparatedByString:@","];
+    NSArray *scopes = [scopeStr componentsSeparatedByString:@" "];
 
     // NSString *sep = @", ";
     // NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:sep];
